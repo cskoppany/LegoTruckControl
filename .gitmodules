@@ -1,0 +1,3 @@
+[submodule "submodules/Libraries/TCCUsefulFunctions_CNL113472"]
+	path = submodules/Libraries/TCCUsefulFunctions_CNL113472
+	url = http://github.com/eclipse/titan.Libraries.TCCUsefulFunctions
