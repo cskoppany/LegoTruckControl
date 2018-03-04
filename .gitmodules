@@ -1,3 +1,21 @@
 [submodule "submodules/Libraries/TCCUsefulFunctions_CNL113472"]
 	path = submodules/Libraries/TCCUsefulFunctions_CNL113472
 	url = http://github.com/eclipse/titan.Libraries.TCCUsefulFunctions
+[submodule "submodules/TestPorts/AbstractSocket"]
+	path = submodules/TestPorts/AbstractSocket
+	url = http://github.com/eclipse/titan.TestPorts.Common_Components.Abstract_Socket
+[submodule "submodules/ProtocolModules/CoAP"]
+	path = submodules/ProtocolModules/CoAP
+	url = http://git.eclipse.org/gitroot/titan/titan.ProtocolModules.CoAP.git
+[submodule "submodules/TestPorts/HTTPmsg"]
+	path = submodules/TestPorts/HTTPmsg
+	url = https://github.com/eclipse/titan.TestPorts.HTTPmsg.git
+[submodule "submodules/TestPorts/IPL4asp"]
+	path = submodules/TestPorts/IPL4asp
+	url = https://github.com/eclipse/titan.TestPorts.IPL4asp.git
+[submodule "submodules/Applications/IoT_FunctionTest_Framework"]
+	path = submodules/Applications/IoT_FunctionTest_Framework
+	url = https://git.eclipse.org/gitroot/titan/titan.Applications.IoT_Functiontest_Framework.git
+[submodule "submodules/ProtocolModules/MQTT"]
+	path = submodules/ProtocolModules/MQTT
+	url = https://git.eclipse.org/gitroot/titan/titan.ProtocolModules.CoAP.git
