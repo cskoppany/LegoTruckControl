@@ -16,6 +16,3 @@
 [submodule "submodules/Applications/IoT_FunctionTest_Framework"]
 	path = submodules/Applications/IoT_FunctionTest_Framework
 	url = https://git.eclipse.org/gitroot/titan/titan.Applications.IoT_Functiontest_Framework.git
-[submodule "submodules/ProtocolModules/MQTT"]
-	path = submodules/ProtocolModules/MQTT
-	url = https://git.eclipse.org/gitroot/titan/titan.ProtocolModules.CoAP.git
