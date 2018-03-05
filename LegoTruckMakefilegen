@@ -1,0 +1,56 @@
+if pwd | grep LegoTruckControl/bin; then cd .; \
+  elif cd ./bin; then ln -sf ../LegoTruckMakefilegen; \
+  else echo Run the script from the LegoTruckControl/bin directory && exit; \
+fi
+
+#git clone https://github.com/cskoppany/LegoTruckControl.git
+ln -sf $TTCN3_DIR/include/TitanLoggerControl.ttcn
+#ln -sf $TTCN3_DIR/demo/PCOType.cc
+#ln -sf $TTCN3_DIR/demo/PCOType.hh
+ln -sf ../src/LegoTruckControl.ttcn
+#ln -sf ../LegoTruckControl/IoT_FT_Framework.ttcn
+
+ln -sf ../GPIO/src/GPIO_Pin_Port.hh
+ln -sf ../GPIO/src/GPIO_Pin_Port.cc
+ln -sf ../GPIO/src/GPIOPinPort.ttcn
+ln -sf ../GPIO/src/GPIO_Common.ttcn
+ln -sf ../submodules/Libraries/TCCUsefulFunctions/src/TCCFileIO.cc
+ln -sf ../submodules/Libraries/TCCUsefulFunctions/src/TCCFileIO_Functions.ttcn
+ln -sf ../submodules/Libraries/TCCUsefulFunctions/src/TCCInterface.cc
+ln -sf ../submodules/Libraries/TCCUsefulFunctions/src/TCCInterface_ip.h
+ln -sf ../submodules/Libraries/TCCUsefulFunctions/src/TCCInterface_Functions.ttcn
+ln -sf ../submodules/Libraries/TCCUsefulFunctions/src/TCCConversion.cc
+ln -sf ../submodules/Libraries/TCCUsefulFunctions/src/TCCConversion_Functions.ttcn
+ln -sf ../submodules/TestPorts/SocketAPI/src/Socket_API_Definitions.ttcn
+ln -sf ../submodules/TestPorts/AbstractSocket/src/Abstract_Socket.hh
+ln -sf ../submodules/TestPorts/AbstractSocket/src/Abstract_Socket.cc
+#ln -sf ../submodules/TestPorts/IPL4asp/src/IPL4asp_Types.ttcn
+#ln -sf ../submodules/TestPorts/IPL4asp/src/IPL4asp_PortType.ttcn
+#ln -sf ../submodules/TestPorts/IPL4asp/src/IPL4asp_Functions.ttcn
+#ln -sf ../submodules/TestPorts/IPL4asp/src/IPL4asp_discovery.cc
+#ln -sf ../submodules/TestPorts/IPL4asp/src/IPL4asp_PT.hh
+#ln -sf ../submodules/ProtocolModules/CoAP/src/CoAP_EncDec.cc
+#ln -sf ../submodules/TestPorts/HTTPmsg/src/HTTPmsg_PT.hh
+#ln -sf ../submodules/TestPorts/HTTPmsg/src/HTTPmsg_PT.cc
+#ln -sf ../submodules/TestPorts/HTTPmsg/src/HTTPmsg_MessageLen_Function.cc
+ln -sf ../submodules/ProtocolModules/MQTT/src/MQTT_v3_1_1_Types.ttcn
+ln -sf ../submodules/ProtocolModules/MQTT/src/MQTT_v3_1_1_IPL4SizeFunction.ttcn
+ln -sf ../submodules/ProtocolModules/MQTT/src/MQTT_v3_1_1_EncDec.cc
+ln -sf ../submodules/ProtocolModules/MQTT/src/MQTT_v3_1_1_Size.cc
+#used for utility-testcase TC_LegoTruck_signalwithLED only
+
+#makefilegen -fR -e LegoTruckControl \
+makefilegen -fRw -e LegoTruckControl \
+  *.ttcn *.cc *.hh
+#  ../IPL4asp/src/*.ttcn ../IPL4asp/src/IPL4asp_protocol_L234.hh IPL4asp_discovery.cc IPL4asp_PT.cc IPL4asp_PT.hh \
+#  ../SocketAPI/src/*.ttcn \
+#  Abstract_Socket.cc Abstract_Socket.hh \
+#  ../CoAP/src/*.ttcn CoAP_EncDec.cc \
+#  ../HTTPmsg/src/*.ttcn HTTPmsg_MessageLen_Function.cc HTTPmsg_PT.cc HTTPmsg_PT.hh \
+#  ../IoTFW_/src/*.ttcn \
+#  ../MQTT/src/*.ttcn MQTT_v3_1_1_EncDec.cc MQTT_v3_1_1_Size.cc \
+#  $TTCN3_DIR/include/TitanLoggerControl.ttcn \
+#  $TTCN3_DIR/demo/MyExample.ttcn PCOType.cc PCOType.hh
+# ^used for utility-testcase TC_LegoTruck_signalwithLED only
+
+
