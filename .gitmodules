@@ -22,3 +22,6 @@
 [submodule "submodules/TestPorts/SocketAPI"]
 	path = submodules/TestPorts/SocketAPI
 	url = https://github.com/eclipse/titan.TestPorts.Common_Components.Socket-API.git
+[submodule "submodules/TestPorts/GPIO"]
+	path = submodules/TestPorts/GPIO
+	url = git://git.eclipse.org/gitroot/titan/titan.TestPorts.GPIO.git
