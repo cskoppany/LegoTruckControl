@@ -19,3 +19,6 @@
 [submodule "submodules/ProtocolModules/MQTT"]
 	path = submodules/ProtocolModules/MQTT
 	url = https://git.eclipse.org/gitroot/titan/titan.ProtocolModules.MQTT.git
+[submodule "submodules/TestPorts/SocketAPI"]
+	path = submodules/TestPorts/SocketAPI
+	url = https://github.com/eclipse/titan.TestPorts.Common_Components.Socket-API.git
