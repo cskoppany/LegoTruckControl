@@ -1,0 +1,17 @@
+TODO:
+
+Cleanup code
+- Remove obsolated comments, and code parts
+- Comment lines used for testing
+- Remove redundant functions (may exists in submodules)
+
+Add functionality:
+- Stop the truch if no network connection, in order to protect the car.
+- Control GUI should indicate if truck stopped in the pit stop and therefore can not be controlled (e.g. grey GUI)
+
+Other:
+- Add the code controls the remote sensor and the lamp (from Levi)
+- Use teh IoT sensor's library as submodule for the sensor code
+- Where is the Control GUI code?
+- Add sample cfg file
+- Add description for execution and testing
