@@ -9,7 +9,10 @@ module LegoTruckControl {
 import from GPIOPinPort all;
 import from GPIO_Common all;
 import from TCCFileIO_Functions all;
-import from IoT_FT_Framework all;
+import from IoT_FT_Framework_Definitions all;
+import from IoT_FT_Framework_Functions all;
+import from IFW_MQTT_Client_Definitions all;
+import from IFW_MQTT_Client_TestSteps all;
 import from MqttTestSuite_Interop all;
 import from TitanLoggerControl all;
 
@@ -58,7 +61,7 @@ type record of integer GPIO_PinList;
 
 
 //ethgry: component type added
-type component LegoTruckControl_CT extends GPIO_Base, IFW_MAIN_CT {
+type component LegoTruckControl_CT extends GPIO_Base, IFW_MAIN_CT, IFW_MQTT_Client_CT {
 
     var LAMP v_lamp := OFF;
     var DIRECTION v_direction := STRAIGHT;
@@ -110,12 +113,12 @@ testcase tc_Mqtt_client_subscribe() runs on LegoTruckControl_CT
         action("Direction: ", v_direction)
         action("Light: ", v_lamp)
         f_IFW_MqttClient_receive(mqtt_client);
-        if(ischosen(lastReceivedMQTT.publish)){
-          log("Received message ", oct2char(lastReceivedMQTT.publish.payload));
+        if(ischosen(lastReceived.publish)){
+          log("Received message ", oct2char(lastReceived.publish.payload));
 
 
           //ethgry: GPIO pin vezerles atmozgatva ide IFW_MQTT_Client.f_MQTT_Client_receive-bol    
-          msg := oct2char(lastReceivedMQTT.publish.payload);
+          msg := oct2char(lastReceived.publish.payload);
           action("Received message ", msg);
 	  
               if ( not v_inPitStop) {

@@ -10,29 +10,51 @@ ln -sf $TTCN3_DIR/include/TitanLoggerControl.ttcn
 ln -sf ../src/LegoTruckControl.ttcn
 #ln -sf ../LegoTruckControl/IoT_FT_Framework.ttcn
 
-ln -sf ../GPIO/src/GPIO_Pin_Port.hh
-ln -sf ../GPIO/src/GPIO_Pin_Port.cc
-ln -sf ../GPIO/src/GPIOPinPort.ttcn
-ln -sf ../GPIO/src/GPIO_Common.ttcn
-ln -sf ../submodules/Libraries/TCCUsefulFunctions/src/TCCFileIO.cc
-ln -sf ../submodules/Libraries/TCCUsefulFunctions/src/TCCFileIO_Functions.ttcn
-ln -sf ../submodules/Libraries/TCCUsefulFunctions/src/TCCInterface.cc
-ln -sf ../submodules/Libraries/TCCUsefulFunctions/src/TCCInterface_ip.h
-ln -sf ../submodules/Libraries/TCCUsefulFunctions/src/TCCInterface_Functions.ttcn
-ln -sf ../submodules/Libraries/TCCUsefulFunctions/src/TCCConversion.cc
-ln -sf ../submodules/Libraries/TCCUsefulFunctions/src/TCCConversion_Functions.ttcn
+ln -sf ../submodules/TestPorts/GPIO/src/GPIO_Pin_Port.hh
+ln -sf ../submodules/TestPorts/GPIO/src/GPIO_Pin_Port.cc
+ln -sf ../submodules/TestPorts/GPIO/src/GPIOPinPort.ttcn
+ln -sf ../submodules/TestPorts/GPIO/src/GPIO_Common.ttcn
+ln -sf ../submodules/Libraries/TCCUsefulFunctions_CNL113472/src/TCCFileIO.cc
+ln -sf ../submodules/Libraries/TCCUsefulFunctions_CNL113472/src/TCCFileIO_Functions.ttcn
+ln -sf ../submodules/Libraries/TCCUsefulFunctions_CNL113472/src/TCCInterface.cc
+ln -sf ../submodules/Libraries/TCCUsefulFunctions_CNL113472/src/TCCInterface_ip.h
+ln -sf ../submodules/Libraries/TCCUsefulFunctions_CNL113472/src/TCCInterface_Functions.ttcn
+ln -sf ../submodules/Libraries/TCCUsefulFunctions_CNL113472/src/TCCConversion.cc
+ln -sf ../submodules/Libraries/TCCUsefulFunctions_CNL113472/src/TCCConversion_Functions.ttcn
+ln -sf ../submodules/Libraries/TCCUsefulFunctions_CNL113472/src/TCCMessageHandling.cc
+ln -sf ../submodules/Libraries/TCCUsefulFunctions_CNL113472/src/TCCMessageHandling_Functions.ttcn
 ln -sf ../submodules/TestPorts/SocketAPI/src/Socket_API_Definitions.ttcn
 ln -sf ../submodules/TestPorts/AbstractSocket/src/Abstract_Socket.hh
 ln -sf ../submodules/TestPorts/AbstractSocket/src/Abstract_Socket.cc
-#ln -sf ../submodules/TestPorts/IPL4asp/src/IPL4asp_Types.ttcn
-#ln -sf ../submodules/TestPorts/IPL4asp/src/IPL4asp_PortType.ttcn
-#ln -sf ../submodules/TestPorts/IPL4asp/src/IPL4asp_Functions.ttcn
-#ln -sf ../submodules/TestPorts/IPL4asp/src/IPL4asp_discovery.cc
-#ln -sf ../submodules/TestPorts/IPL4asp/src/IPL4asp_PT.hh
-#ln -sf ../submodules/ProtocolModules/CoAP/src/CoAP_EncDec.cc
-#ln -sf ../submodules/TestPorts/HTTPmsg/src/HTTPmsg_PT.hh
-#ln -sf ../submodules/TestPorts/HTTPmsg/src/HTTPmsg_PT.cc
-#ln -sf ../submodules/TestPorts/HTTPmsg/src/HTTPmsg_MessageLen_Function.cc
+ln -sf ../submodules/Applications/IoT_FunctionTest_Framework/IFW_Common.ttcn
+ln -sf ../submodules/Applications/IoT_FunctionTest_Framework/IFW_CoAP_Peer_Definitions.ttcn
+ln -sf ../submodules/Applications/IoT_FunctionTest_Framework/IFW_HTTP_Client_Definitions.ttcn
+ln -sf ../submodules/Applications/IoT_FunctionTest_Framework/IFW_MQTT_Client_Definitions.ttcn
+ln -sf ../submodules/Applications/IoT_FunctionTest_Framework/IoT_FT_Framework_Definitions.ttcn
+ln -sf ../submodules/Applications/IoT_FunctionTest_Framework/IFW_CoAP_Peer_Functions.ttcn
+ln -sf ../submodules/Applications/IoT_FunctionTest_Framework/IFW_HTTP_Client_Functions.ttcn
+ln -sf ../submodules/Applications/IoT_FunctionTest_Framework/IFW_MQTT_Client_Functions.ttcn
+ln -sf ../submodules/Applications/IoT_FunctionTest_Framework/IFW_CoAP_Peer_TestSteps.ttcn
+ln -sf ../submodules/Applications/IoT_FunctionTest_Framework/IFW_HTTP_Client_TestSteps.ttcn
+ln -sf ../submodules/Applications/IoT_FunctionTest_Framework/IFW_MQTT_Client_TestSteps.ttcn
+ln -sf ../submodules/Applications/IoT_FunctionTest_Framework/IoT_FT_Framework_Functions.ttcn
+ln -sf ../submodules/Applications/IoT_FunctionTest_Framework/IFW_MQTT_Client_TestSteps.ttcn
+ln -sf ../submodules/Applications/IoT_FunctionTest_Framework/tests/MqttTestSuite_Interop.ttcn
+ln -sf ../submodules/TestPorts/IPL4asp/src/IPL4asp_Types.ttcn
+ln -sf ../submodules/TestPorts/IPL4asp/src/IPL4asp_PortType.ttcn
+ln -sf ../submodules/TestPorts/IPL4asp/src/IPL4asp_Functions.ttcn
+ln -sf ../submodules/TestPorts/IPL4asp/src/IPL4asp_discovery.cc
+ln -sf ../submodules/TestPorts/IPL4asp/src/IPL4asp_PT.hh
+ln -sf ../submodules/TestPorts/IPL4asp/src/IPL4asp_PT.cc
+ln -sf ../submodules/TestPorts/IPL4asp/src/IPL4asp_protocol_L234.hh
+ln -sf ../submodules/ProtocolModules/CoAP/src/CoAP_EncDec.cc
+ln -sf ../submodules/ProtocolModules/CoAP/src/CoAP_Types.ttcn
+ln -sf ../submodules/TestPorts/HTTPmsg/src/HTTPmsg_PT.hh
+ln -sf ../submodules/TestPorts/HTTPmsg/src/HTTPmsg_PT.cc
+ln -sf ../submodules/TestPorts/HTTPmsg/src/HTTPmsg_MessageLen_Function.cc
+ln -sf ../submodules/TestPorts/HTTPmsg/src/HTTPmsg_MessageLen.ttcn
+ln -sf ../submodules/TestPorts/HTTPmsg/src/HTTPmsg_Types.ttcn
+ln -sf ../submodules/TestPorts/HTTPmsg/src/HTTPmsg_PortType.ttcn
 ln -sf ../submodules/ProtocolModules/MQTT/src/MQTT_v3_1_1_Types.ttcn
 ln -sf ../submodules/ProtocolModules/MQTT/src/MQTT_v3_1_1_IPL4SizeFunction.ttcn
 ln -sf ../submodules/ProtocolModules/MQTT/src/MQTT_v3_1_1_EncDec.cc
@@ -42,7 +64,7 @@ ln -sf ../submodules/ProtocolModules/MQTT/src/MQTT_v3_1_1_Size.cc
 #makefilegen -fR -e LegoTruckControl \
 makefilegen -fRw -e LegoTruckControl \
   *.ttcn *.cc *.hh
-#  ../IPL4asp/src/*.ttcn ../IPL4asp/src/IPL4asp_protocol_L234.hh IPL4asp_discovery.cc IPL4asp_PT.cc IPL4asp_PT.hh \
+
 #  ../SocketAPI/src/*.ttcn \
 #  Abstract_Socket.cc Abstract_Socket.hh \
 #  ../CoAP/src/*.ttcn CoAP_EncDec.cc \
